@@ -1,8 +1,3 @@
-// ==========================================================================
-// INTERATIVIDADE DA PÁGINA SOBRE (PARALLAX ORBITAL E TILT 3D)
-// Baseado nas técnicas interativas aplicadas na página inicial do SENTRA
-// ==========================================================================
-
 document.addEventListener("DOMContentLoaded", () => {
   // Seleção dos elementos do DOM
   const bodyEl = document.body;
@@ -45,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Renderização em tempo de execução via RequestAnimationFrame
   function renderParallax() {
-    // Interpolação matemática suave (ease-out de 0.08)
     smoothX += (mouseX - smoothX) * 0.08;
     smoothY += (mouseY - smoothY) * 0.08;
 
@@ -57,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // 2. Parallax reverso no glow de luz orbital do Hero
     if (heroGlow) {
-      // Deslocamento reverso para criar profundidade 3D (efeito parallax multicamada)
       heroGlow.style.transform = `translate3d(calc(-50% + ${-smoothX * 0.8}px), calc(-50% + ${-smoothY * 0.8}px), 0)`;
     }
 
