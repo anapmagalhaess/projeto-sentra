@@ -28,8 +28,8 @@
         <a href="./pag-demonstracao.html" class="btn-nav">Demonstração</a>
     </header>
     <main>
-        <section class="contact">
-            <img src="../assets/bg-espaco.webp" alt="Planeta">
+        <section class="section-contact">
+            <img src="../assets/bg-espaco.webp" alt="Planeta" class="bg-contact">
             <div class="left-side">
                 <div class="contact-header">
                     <h2 class="header-tag">Contato</h2>
@@ -37,31 +37,36 @@
                         <span class="header-title--highlight">proteger o futuro.</span>
                     </h1>
                     <p class="header-subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Beatae perferendis tempora perspiciatis sint nisi doloribus
-                        molestias deserunt odio fuga suscipit.</p>
+                        Beatae perferendis tempora perspiciatis sint nisi doloribus.</p>
                 </div>
-                <div class="contact-section">
-                    <div class="contacts">
-                        <h3 class="contacts-title"><i class="fa-solid fa-envelope contact-icon"></i></i>E-mail</h3>
-                        <p class="contacts-subtitle">Lorem@ipsum.com</p>
+                <div class="contacts">
+                    <div class="contact">
+                        <h3 class="contact-title"><i class="fa-solid fa-envelope contact-icon"></i>E-mail</h3>
+                        <p class="contact-subtitle">Contato@sentra.com</p>
                     </div>
-                    <div class="contacts">
-                        <h3 class="contacts-title"><i class="fa-solid fa-phone contact-icon"></i>Telefone</h3>
-                        <p class="header-subtitle">+55 11996415593</p>
+                    <div class="contact">
+                        <h3 class="contact-title"><i class="fa-solid fa-phone contact-icon"></i>Telefone</h3>
+                        <p class="contact-subtitle">+55 11 996415593</p>
                     </div>
-                    <div class="contacts">
-                        <h3 class="contacts-title"><i class="fa-brands fa-github contact-icon">Github</i></h3>
-                        <p class="header-subtitle">Lorem ipsum dolor sit amet.</p>
+                    <div class="contact">
+                        <h3 class="contact-title"><i class="fa-brands fa-github contact-icon"></i>Github</h3>
+                        <p class="contact-subtitle">Encontrou algum problema? Abra uma
+                            <a href="https://github.com/NextGen-Lulpa/projeto-sentra" target="_blank"
+                                class="contact-subtitle--link" rel="noopener noreferrer">Issue</a>.
+                        </p>
                     </div>
-                    <div class="contacts">
-                        <h3 class="contacts-title"><i class="fa-solid fa-clock contact-icon">Horário de atendimento</i>
+                    <div class="contact">
+                        <h3 class="contact-title"><i class="fa-solid fa-clock contact-icon"></i>Horário de atendimento
                         </h3>
-                        <p class="header-subtitle">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        <p class="contact-subtitle">Segunda a Sexta, das 9h às 18h</p>
                     </div>
                 </div>
                 <div class="contact-card">
-                    <h4 class="card-title"><i class="fa-solid fa-circle-check card-icon"></i></h4>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+                    <i class="fa-solid fa-circle-check card-icon"></i>
+                    <div class="card-text">
+                        <h4 class="card-title">Parcerias, imprensa ou dúvidas?</h4>
+                        <p class="card-subtitle">Estamos prontos para conversar.</p>
+                    </div>
                 </div>
             </div>
             <div class="form">
@@ -76,13 +81,15 @@
                             maxlength="120">
                         <!--e-mail-->
                         <label for="email" class="form-label">E-mail</label>
-                        <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com" minlength="5" maxlength="100">
+                        <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com"
+                            minlength="5" maxlength="100">
                         <!--mensagem-->
                         <label for="text" class="form-label">Mensagem</label>
-                        <input type="text" id="message" name="message" class="form-input" placeholder="Escreva sua mensagem..." 
-                        minlength="15" maxlength="1000">
+                        <input type="text" id="message" name="message" class="form-input"
+                            placeholder="Escreva sua mensagem..." minlength="15" maxlength="1000">
                         <!--submit-->
-                        <button type="submit" class="form-btn">Enviar Mensagem <i class="fa-solid fa-arrow-right form-arrow"></i></button>
+                        <button type="submit" class="form-btn">Enviar Mensagem <i
+                                class="fa-solid fa-arrow-right form-arrow"></i></button>
                     </fieldset>
                 </form>
             </div>
